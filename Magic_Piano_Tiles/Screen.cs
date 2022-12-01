@@ -1,112 +1,54 @@
-using Raylib_cs;
-using System.Numerics;
-class Screen: ObjectColor
+using System;
+using System.Drawing;
+using Console = Colorful.Console;
+
+namespace PianoCheater.Display
 {
-    int ScreenHeight;
-    int ScreenWidth;
-    List<GameObject> Objects = new List<GameObject>();
-    
 
-    Player player = new Player();
-    Score score = new Score();
-    public Screen(): base ()
+    public class Header
     {
-        ScreenHeight = 480;
-        ScreenWidth = 800;
-        var gem = new Gem ();
-        Objects.Add(gem);
-    }
-    
-    public void Run()
-    {
-        Raylib.InitWindow(ScreenWidth, ScreenHeight, "Greed");
-        Raylib.SetTargetFPS(60);
+        private static readonly string Line1 = " ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ";
+        private static readonly string Line2 = "||P |||i |||a |||n |||o |||C |||h |||e |||a |||t |||e |||r ||";
+        private static readonly string Line3 = "||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||";
+        private static readonly string Line4 = "|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|";
+        private static readonly string Line5 = "~ Made by Cod3rMax ~";
+        private static readonly string Line6 = "| Discord: https://discord.gg/Dxh3yY3TqA |";
 
-        int timeIndex = 0;
 
-        bool gameOver = false;
 
-  
-        while (!Raylib.WindowShouldClose())
+        public static void DisplayHeader()
         {
-            if (!gameOver)
-            {
-                int deleteIndex = 0;
-                int index = 0;
-                bool delete = false;
-                foreach (var obj in Objects)
-                {
-                    if (obj.CheckCollision(player.thePlayer))
-                    {
-                        score.AdjustScore(obj);
-                        delete = true;
-                        deleteIndex = index;
-                    }
-                    else
-                    {
-                        obj.Move();
-                    }
+            Console.WriteLine();
 
-                    index += 1;
-                }
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line1.Length) / 2.0),
+                Console.CursorTop);
+            Console.WriteLine(Line1, Color.Red);
 
-                if (delete)
-                {
-                    Objects.RemoveAt(deleteIndex);
-                }
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line2.Length) / 2.0),
+                Console.CursorTop);
+            Console.WriteLine(Line2, Color.Red);
 
-                player.Move();
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line3.Length) / 2.0),
+                Console.CursorTop);
+            Console.WriteLine(Line3, Color.Red);
 
-                if (random.Next(7) == 1)
-                {
-                    int randNum = random.Next(2);
-                    if (randNum == 1)
-                    {
-                        var rock = new Rock();
-                        Objects.Add(rock);
-                    }
-                    else
-                    {
-                        var gem = new Gem ();
-                        Objects.Add(gem);
-                    }
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line4.Length) / 2.0),
+                Console.CursorTop);
+            Console.WriteLine(Line4, Color.Red);
 
-                }
+            Console.WriteLine();
 
-                Raylib.BeginDrawing();
-                Raylib.ClearBackground(backgroundColor);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line5.Length) / 2.0),
+                Console.CursorTop);
+            Console.WriteLine(Line5, Color.GreenYellow);
 
-                score.Draw();
-                player.Draw();
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line6.Length) / 2.0),
+                Console.CursorTop);
+            Console.WriteLine(@Line6, Color.Aqua);
 
-                foreach (var obj in Objects)
-                {
-                    obj.Draw();
-                }
-
-                Raylib.EndDrawing();
-
-                timeIndex += 1;
-
-                if (timeIndex >= 3000)
-                {
-                    gameOver = true;
-                }
-            }
-
-            else
-            {
-                Raylib.BeginDrawing();
-                Raylib.ClearBackground(backgroundColor);
-
-                Raylib.DrawText("Game Over", ScreenWidth/2 -170, ScreenHeight/2 -70, 70, playerColor);
-                Raylib.DrawText($"Score: {score.GetScore()}", ScreenWidth/2 -130, ScreenHeight/2, 50, playerColor);
-
-                Raylib.EndDrawing();
-            }
+            Console.WriteLine();
         }
 
-        Raylib.CloseWindow();
-    }
 
+    }
 }
