@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Magic_Piano_Tiles/1.0.0": {
+        "runtime": {
+          "Magic_Piano_Tiles.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Magic_Piano_Tiles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

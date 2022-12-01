@@ -1,0 +1,15 @@
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/Magic_Piano_Tiles
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/Magic_Piano_Tiles.deps.json
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/Magic_Piano_Tiles.runtimeconfig.json
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/Magic_Piano_Tiles.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/Magic_Piano_Tiles.pdb
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.csproj.AssemblyReference.cache
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.AssemblyInfoInputs.cache
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.AssemblyInfo.cs
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.csproj.CoreCompileInputs.cache
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/refint/Magic_Piano_Tiles.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.pdb
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.genruntimeconfig.cache
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/ref/Magic_Piano_Tiles.dll
