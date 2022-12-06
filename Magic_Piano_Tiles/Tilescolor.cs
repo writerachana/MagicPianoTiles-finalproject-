@@ -12,7 +12,7 @@ class ObjectColor {
 
    public ObjectColor()
    {
-      backgroundColor = Color.BLACK;
+      backgroundColor = Color.BLUE;
       playerColor = Color.WHITE;
       ColorsList.AddRange(colors);
    }

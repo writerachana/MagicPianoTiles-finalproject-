@@ -13,3 +13,9 @@
 /Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.pdb
 /Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.genruntimeconfig.cache
 /Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/ref/Magic_Piano_Tiles.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/Raylib-cs.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/runtimes/linux-x64/native/libraylib.so
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/runtimes/osx-x64/native/libraylib.dylib
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/runtimes/win-x64/native/raylib.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/bin/Debug/net6.0/runtimes/win-x86/native/raylib.dll
+/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/obj/Debug/net6.0/Magic_Piano_Tiles.csproj.CopyComplete

@@ -4,17 +4,32 @@ class Screen: ObjectColor
 {
     int ScreenHeight;
     int ScreenWidth;
+
+    Color white = Color.WHITE;
+     Color black = Color.BLACK;
+
+     int position1 = 0;
+     int position2 = 120;
+     int position3 = 240;
+     int position4 = 360;
+
     List<GameObject> Objects = new List<GameObject>();
     
 
-    Player player = new Player();
+    
     Score score = new Score();
     public Screen(): base ()
     {
-        ScreenHeight = 480;
-        ScreenWidth = 800;
-        var gem = new Gem ();
-        Objects.Add(gem);
+        ScreenHeight = 880;
+        ScreenWidth = 480;
+        var Tile1 = new Tile (white, position1);
+        var Tile2 = new Tile (white, position2);
+        var Tile3 = new Tile (black, position3);
+        var Tile4 = new Tile (white, position4);
+        Objects.Add(Tile1);
+        Objects.Add(Tile2);
+        Objects.Add(Tile3);
+        Objects.Add(Tile4);
     }
     
     public void Run()
@@ -36,16 +51,11 @@ class Screen: ObjectColor
                 bool delete = false;
                 foreach (var obj in Objects)
                 {
-                    if (obj.CheckCollision(player.thePlayer))
-                    {
-                        score.AdjustScore(obj);
-                        delete = true;
-                        deleteIndex = index;
-                    }
-                    else
-                    {
+                    
+                    
+                    
                         obj.Move();
-                    }
+                    
 
                     index += 1;
                 }
@@ -55,29 +65,11 @@ class Screen: ObjectColor
                     Objects.RemoveAt(deleteIndex);
                 }
 
-                player.Move();
-
-                if (random.Next(7) == 1)
-                {
-                    int randNum = random.Next(2);
-                    if (randNum == 1)
-                    {
-                        var rock = new Rock();
-                        Objects.Add(rock);
-                    }
-                    else
-                    {
-                        var gem = new Gem ();
-                        Objects.Add(gem);
-                    }
-
-                }
-
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(backgroundColor);
 
                 score.Draw();
-                player.Draw();
+                
 
                 foreach (var obj in Objects)
                 {

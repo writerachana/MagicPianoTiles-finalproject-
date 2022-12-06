@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "m9L/fZBR7kJ7ASnIMB6zFmNo/yRYKeneNXgsLE9HsqlJVRi9PLWYp+H6hdu3Y/nEy3H2s2hd3sgww0yGZl5FRQ==",
+  "dgSpecHash": "d4fJLwB6oFStcaP1XkQCNEZIXBCKPxlxzYRBuOnsWbLbLf5Ct9OCohEz/SWjVwyZpLmKRoKzjd5AOA6riMZumw==",
   "success": true,
   "projectFilePath": "/Users/rachanakumbhakar/Desktop/MagicPianoTiles-finalproject-/Magic_Piano_Tiles/Magic_Piano_Tiles.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/rachanakumbhakar/.nuget/packages/raylib-cs/4.2.0.1/raylib-cs.4.2.0.1.nupkg.sha512",
+    "/Users/rachanakumbhakar/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

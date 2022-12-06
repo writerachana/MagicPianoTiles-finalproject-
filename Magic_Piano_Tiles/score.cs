@@ -14,12 +14,12 @@ class Score: ObjectPosition
     public override void Draw()
     {
         string text = theScore.ToString();
-        Raylib.DrawText((string) text, (int) Position.X, (int) Position.Y, 40, playerColor);
+        Raylib.DrawText((string) text, (int) Position.X, (int) Position.Y, 40, Color.BLACK);
     }
 
     public void AdjustScore(GameObject theObject)
     {
-        if (theObject is Gem)
+        if (theObject is Tile)
         {
             theScore += 10;
         }
