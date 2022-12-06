@@ -1,35 +1,50 @@
-using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+using Raylib_cs;
+using System.Numerics;
 
-namespace PianoCheater.Helper
-{
-    public class GetWindowRectInfo
+class Player: ObjectPosition{
+
+    int MovementSpeed;
+    public Rectangle thePlayer;
+
+    int Size;
+
+    public Player(): base()
     {
+        Size = 30;
+        MovementSpeed = 4;
+        thePlayer.x = 390;
+        thePlayer.y = 420;
+        thePlayer.width = Size;
+        thePlayer.height = Size;
+        Position.X = thePlayer.x;
+        Position.Y = thePlayer.y;
+    }
 
-        [DllImport("user32.dll", SetLastError = true)]
-        static extern bool GetWindowRect(IntPtr hwnd, out RECT lpRect);
-
-
-
-        [StructLayout(LayoutKind.Sequential)]
-        public struct RECT
-        {
-            public int Left;        // x position of upper-left corner
-            public int Top;         // y position of upper-left corner
-            public int Right;       // x position of lower-right corner
-            public int Bottom;      // y position of lower-right corner
+    public void Move()
+    {
+        if (Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT)) {
+            Position.X += MovementSpeed;
         }
 
-        public static RECT rect;
-
-        public static void GetRectOfTheWindow(IntPtr TheWindowInfo)
-        {
-            GetWindowRect(TheWindowInfo, out rect);
+        if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT)) {
+            Position.X -= MovementSpeed;
         }
+
+        // if (Raylib.IsKeyDown(KeyboardKey.KEY_UP)) {
+            // Position.Y -= MovementSpeed;
+        // }
+        
+        // if (Raylib.IsKeyDown(KeyboardKey.KEY_DOWN)) {
+            // Position.Y += MovementSpeed;
+        // }
+
+
+        thePlayer.x = Position.X;
+    }
+
+    public override void Draw()
+    {
+        Raylib.DrawRectangleLines((int)Position.X, (int)Position.Y, Size, Size, playerColor);
+
     }
 }
