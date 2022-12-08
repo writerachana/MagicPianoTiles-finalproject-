@@ -101,10 +101,12 @@ class Screen: ObjectColor
                         count = 0;
 
 
-                    
 
                 }
+                    
                   count +=1;
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(backgroundColor);
 
                 foreach (var obj in Objects)
             
@@ -134,8 +136,6 @@ class Screen: ObjectColor
 
              
 
-                Raylib.BeginDrawing();
-                Raylib.ClearBackground(backgroundColor);
 
                 
                 
