@@ -17,15 +17,16 @@ class Score: ObjectPosition
         Raylib.DrawText((string) text, (int) Position.X, (int) Position.Y, 40, Color.BLACK);
     }
 
-    public void AdjustScore(GameObject theObject)
+    public bool AdjustScore(GameObject theObject)
     {
-        if (theObject is Tile)
+        if (theObject.GetColor() == true)
         {
             theScore += 10;
+            return false;
         }
         else
         {
-            theScore -= 10;
+            return true;
         }
     }
 

@@ -3,7 +3,9 @@ using System.Numerics;
 
 class GameObject: ObjectPosition{
     public Vector2 Velocity = new Vector2(0, 5);
-    protected Color theColor;
+     Color theColor;
+
+     public bool colorNumber;
 
     public GameObject(): base()
     {
@@ -25,6 +27,12 @@ class GameObject: ObjectPosition{
     {
         return false;
     }
-    
+    virtual public Rectangle GetRectangle()
+    {
+        return new Rectangle(4,3,2,1);
+    }
+    public bool  GetColor(){
+        return colorNumber;
+    }
 
 }
