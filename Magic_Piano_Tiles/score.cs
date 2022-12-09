@@ -19,6 +19,7 @@ class Score: ObjectPosition
 
     public bool AdjustScore(GameObject theObject)
     {
+        
         if (theObject.GetColor() == true)
         {
             theScore += 10;

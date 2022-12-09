@@ -116,32 +116,26 @@ class Screen: ObjectColor
                 }
                 Vector2 MousePosition = click.GetMousePosition();
                 bool IsMouseButtonPressed = click.IsMouseButtonPressed();
-                Console.WriteLine(IsMouseButtonPressed);
+                // Console.WriteLine(IsMouseButtonPressed);
                 if (IsMouseButtonPressed){
-                    
+                    Console.WriteLine(IsMouseButtonPressed);
                     bool adjustscore = false;
                     GameObject therectangle = new GameObject();
                     foreach (var obj in Objects){
+                        
                         Rectangle rectangle = obj.GetRectangle();
                         adjustscore =  Raylib.CheckCollisionPointRec(MousePosition, rectangle); 
                         if (adjustscore){
+
+                            
                             therectangle = obj;
                         }
     
                     }
-                    if (adjustscore){
+                    // if (adjustscore){
                         gameOver = score.AdjustScore(therectangle);
-                    }
+                    // }
                 }
-
-
-
-             
-
-
-                
-                
-
                 foreach (var obj in Objects)
                 {
                     obj.Draw();
