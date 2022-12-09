@@ -7,7 +7,7 @@ using Raylib_cs;
     public class MouseClickHelper{
 
         public bool IsMouseButtonPressed(){
-             return Raylib.IsMouseButtonPressed(MouseButton.MOUSE_BUTTON_RIGHT);
+             return Raylib.IsMouseButtonPressed(MouseButton.MOUSE_BUTTON_LEFT);
         }
         public Vector2 GetMousePosition(){
             return Raylib.GetMousePosition();

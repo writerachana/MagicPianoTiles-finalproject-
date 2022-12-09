@@ -105,6 +105,7 @@ class Screen: ObjectColor
                 }
                     
                   count +=1;
+
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(backgroundColor);
 
@@ -115,8 +116,9 @@ class Screen: ObjectColor
                 }
                 Vector2 MousePosition = click.GetMousePosition();
                 bool IsMouseButtonPressed = click.IsMouseButtonPressed();
-
+                Console.WriteLine(IsMouseButtonPressed);
                 if (IsMouseButtonPressed){
+                    
                     bool adjustscore = false;
                     GameObject therectangle = new GameObject();
                     foreach (var obj in Objects){
